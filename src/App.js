@@ -1,7 +1,7 @@
 import './App.css';
 
 // components
-import SidebarWrapper from './components/SidebarWrapper';
+import SidebarWrapper from './components/Sidebar/SidebarWrapper';
 
 function App() {
   return (
