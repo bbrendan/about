@@ -1,16 +1,24 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // components
-import SidebarWrapper from './components/Sidebar/SidebarWrapper';
+import Navbar from './components/Navbar/Navbar';
+
+// pages
+import Landing from './pages/Landing';
+import About from './pages/About';
+import Work from './pages/Work';
 
 function App() {
   return (
-    <div className="App">
-      <SidebarWrapper />
-      <div id="shell">
-        <h1 style={{ color: "white", marginLeft: "50px" }}>Brendan Farrell</h1>
-      </div>
-    </div>
+    <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact element={<Landing />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Work />} />
+        </Routes>
+      </Router>
   );
 }
 
