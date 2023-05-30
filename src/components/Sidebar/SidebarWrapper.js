@@ -4,7 +4,8 @@ import React from "react";
 import * as s from "./SidebarWrapper.styles";
 
 // components
-import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
+import { Sidebar, Menu, useProSidebar } from "react-pro-sidebar";
+import MenuOption from "../MenuOption/MenuOption";
 
 // icons
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
@@ -15,28 +16,16 @@ function SidebarWrapper() {
   const { collapseSidebar } = useProSidebar();
 
   return (
-    <div id="sidebar" style={{ height: "100vh", display: "flex" }}>
+    <div id="sidebar" style={{ height: "100vh", display: "inline-flex" }}>
       <s.WrapperStyles>
-        <Sidebar className="sidebar">
+        <Sidebar className="sidebar" backgroundColor="#F4F7F5" transitionDuration={200}>
           <Menu>
-            <MenuItem
-              icon={<MenuOutlinedIcon />}
-              onClick={() => {
-                collapseSidebar();
-              }}
-            ></MenuItem>
-            <MenuItem icon={<HomeOutlinedIcon />}>
-              <h1 style={{ color: "white" }}>Home</h1>
-            </MenuItem>
-            <MenuItem icon={<ContactsOutlinedIcon />}>
-              <h1 style={{ color: "white" }}>Contact</h1>
-            </MenuItem>
+            <MenuOption icon={<MenuOutlinedIcon />} menuClick={() => collapseSidebar()} />
+            <MenuOption title="Home" icon={<HomeOutlinedIcon />} />
+            <MenuOption title="Contact" icon={<ContactsOutlinedIcon />} />
           </Menu>
         </Sidebar>
       </s.WrapperStyles>
-      <div id="shell">
-        <h1 style={{ color: "white", marginLeft: "50px" }}>Brendan Farrell</h1>
-      </div>
     </div>
   );
 }

@@ -7,6 +7,9 @@ function App() {
   return (
     <div className="App">
       <SidebarWrapper />
+      <div id="shell">
+        <h1 style={{ color: "white", marginLeft: "50px" }}>Brendan Farrell</h1>
+      </div>
     </div>
   );
 }
