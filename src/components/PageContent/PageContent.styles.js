@@ -9,6 +9,7 @@ export const PageWrapper = styled.div`
     }
 
     .home-page {
+        position: absolute;
         top: 50%;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
