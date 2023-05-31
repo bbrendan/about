@@ -5,7 +5,7 @@ const Landing = () => {
     <div id='home' className='scroll-page'>
       <div className='home-page'>
         <h1>Hi, I'm Brendan, a Full-Stack Developer</h1>
-        <p>Currently based in Toronto, Ontario - Two years of experience builing applications with a passion for creation and design.</p>
+        <p>Currently based in Toronto, Ontario - two years of experience building applications with a passion for creation and design.</p>
       </div>
     </div>
   );
