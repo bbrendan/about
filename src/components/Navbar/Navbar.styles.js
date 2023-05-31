@@ -1,12 +1,15 @@
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { NavLink as Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 import styled from 'styled-components';
   
 export const NavWrapper = styled.nav`
-  background: #FAEABF;
+  background: #FFF6DD;
   display: flex;
   justify-content: left;
   padding: 8px;
+  position: sticky;
+  top: 0;
+  width: 100vh;
 
   .nav-menu {
     display: flex;
@@ -26,7 +29,7 @@ export const NavLink = styled(Link)`
   padding: 0px 16px 0px 16px;
 
   cursor: pointer;
-  &.active {
+  &:hover {
     color: #FFF2E3;
     background-color: #B56252;
     border-radius: 8px 24px;

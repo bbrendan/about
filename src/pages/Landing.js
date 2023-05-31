@@ -2,15 +2,11 @@ import React from 'react';
   
 const Landing = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Landing</h1>
+    <div id='home' className='scroll-page'>
+      <div className='home-page'>
+        <h1>Hi, I'm Brendan, a Full-Stack Developer</h1>
+        <p>Currently based in Toronto, Ontario - Two years of experience builing applications with a passion for creation and design.</p>
+      </div>
     </div>
   );
 };

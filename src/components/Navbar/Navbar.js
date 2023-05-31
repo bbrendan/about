@@ -1,28 +1,44 @@
 import React from "react";
-import {
-  NavWrapper,
-  NavLink,
-  Menu,
-} from "./NavbarElements";
+
+// styles
+import * as s from "./Navbar.styles";
 
 const Navbar = () => {
   return (
     <>
-      <NavWrapper>
-        <Menu />
+      <s.NavWrapper>
+        <s.Menu />
 
         <div className="nav-menu">
-          <NavLink to="/" activeStyle>
-            Home
-          </NavLink>
-          <NavLink to="/about" activeStyle>
-            About
-          </NavLink>
-          <NavLink to="/projects" activeStyle>
-            Projects
-          </NavLink>
+          <s.NavLink
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={600}
+            to="home"
+          >
+            HOME
+          </s.NavLink>
+          <s.NavLink
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={600}
+            to="about"
+          >
+            ABOUT
+          </s.NavLink>
+          <s.NavLink
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={600}
+            to="projects"
+          >
+            PROJECTS
+          </s.NavLink>
         </div>
-      </NavWrapper>
+      </s.NavWrapper>
     </>
   );
 };

@@ -2,15 +2,8 @@ import React from 'react';
   
 const About = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>He got that dawg in 'em</h1>
+    <div id='about' className='scroll-page'>
+      <h1>I got that dawg in me</h1>
     </div>
   );
 };

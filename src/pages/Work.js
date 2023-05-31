@@ -2,15 +2,8 @@ import React from 'react';
   
 const Work = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Workin'</h1>
+    <div id='projects' className='scroll-page'>
+      <h1>Workin' on em</h1>
     </div>
   );
 };

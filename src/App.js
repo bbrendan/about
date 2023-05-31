@@ -1,24 +1,20 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// styles
+import './App.css';
 
 // components
 import Navbar from './components/Navbar/Navbar';
-
-// pages
-import Landing from './pages/Landing';
-import About from './pages/About';
-import Work from './pages/Work';
+import PageContent from './components/PageContent/PageContent';
 
 function App() {
   return (
     <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact element={<Landing />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Work />} />
-        </Routes>
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route path="*" element={<PageContent style={{ padding: '16px' }} />} />
+      </Routes>
+    </Router>
   );
 }
 
