@@ -1,20 +1,52 @@
 import styled from 'styled-components';
-  
+import WysiwygOutlined from "@mui/icons-material/WysiwygOutlined";
+
+export const Logo = styled(WysiwygOutlined)`
+  color: #DE9556;
+  margin: 0px 32px 0px 4px;
+  transform: scale(4);
+`;
+
 export const PageWrapper = styled.div`
     .scroll-page {
-        padding-left: 16px;
-        display: flex;
         height: 100vh;
-        width: 100vh;
     }
 
-    .home-page {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
+    #home {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 64px;
+        top: -80px;
     }
+
+    #about {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 64px;
+        text-align: center;
+    }
+`;
+
+export const LandingPageWrapper = styled.div`
+  .left-section {
+    
+  }
+
+  .right-section {
+
+  }
+`;
+
+export const AboutPageWrapper = styled.div`
+  .current-work {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
 `;
