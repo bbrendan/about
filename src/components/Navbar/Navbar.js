@@ -26,7 +26,7 @@ const Navbar = () => {
           className="navlink"
           spy={true}
           smooth={true}
-          offset={-250}
+          offset={-200}
           duration={600}
           to="skills"
         >

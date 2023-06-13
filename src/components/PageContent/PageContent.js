@@ -16,9 +16,6 @@ const PageContent = () => {
         <s.AboutPageWrapper>
           <About />
         </s.AboutPageWrapper>
-        <s.AboutPageWrapper>
-          <About />
-        </s.AboutPageWrapper>
         <Skills />
       </div>
     </s.PageWrapper>

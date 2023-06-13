@@ -24,12 +24,8 @@ export const PageWrapper = styled.div`
 
   #about {
     display: flex;
-    position: relative;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0 64px;
-    text-align: center;
   }
 
   #skills {
