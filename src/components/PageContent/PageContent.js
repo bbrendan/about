@@ -10,7 +10,7 @@ const PageContent = () => {
   return (
     <s.PageWrapper>
       <div className="page-content">
-        <s.LandingPageWrapper className="landing-page-wrapper">
+        <s.LandingPageWrapper>
           <Landing />
         </s.LandingPageWrapper>
         <s.AboutPageWrapper>

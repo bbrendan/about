@@ -18,14 +18,33 @@ export const PageWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 64px;
-    top: -80px;
+
+    .home-content {
+      position: absolute;
+      top: 120px;
+      text-align: center;
+      z-index: 1;
+      width: 55%;
+    }
   }
 
   #about {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+
+    .about-title {
+      top: 40px;
+      position: relative;
+    }
+
+    .content-section {
+      line-height: 24px;
+      text-align: center;
+      z-index: 1;
+      width: 80%;
+    }
   }
 
   #skills {

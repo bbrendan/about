@@ -3,8 +3,8 @@ import styled from 'styled-components';
   
 export const NavWrapper = styled.nav`
   position: fixed;
-  box-shadow: 2px 0px 11px 2px #DE9556;
-  font-size: 14px;
+  box-shadow: 2px 0px 11px 2px #525252;
+  font-size: 20px;
   box-sizing: border-box;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FFF6DD;
+  background: #000000;
   padding: 16px 15%;
   z-index: 12;
 `;
@@ -24,15 +24,15 @@ export const NavMenu = styled.ul`
   padding: 0;
 
   .navlink {
-    margin-left: 16px;
+    margin-left: 32px;
   }
 `;
 
 export const NavLink = styled(Link)`
-  color: #DE9556;
+  color: #ffffff;
 
   cursor: pointer;
   &:hover {
-    color: #B56252;
+    color: #ff0000;
   }
 `;
