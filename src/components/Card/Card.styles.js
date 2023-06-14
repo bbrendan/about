@@ -2,8 +2,8 @@ import styled from 'styled-components';
   
 export const CardWrapper = styled.div`
     width: 30vh;
-    border: 1px solid #DE9556;
-    background: #FFF8DD;
+    border: 1px solid lightgrey;
+    background: #f7f7f7;
     border-radius: 10px;
     margin: 8px;
     padding: 8px 24px;
@@ -20,9 +20,3 @@ export const CardWrapper = styled.div`
         font-size: 14px;
     }
 `;
-
-export const CardIcon = styled.div`
-    .MuiSvgIcon-root {
-        transform: scale(2);
-    }
-`; 

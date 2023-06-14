@@ -3,6 +3,9 @@ import React from "react";
 // components
 import InfoGrid from "../components/InfoGrid/InfoGrid";
 
+// images
+import chain from "../images/chain3.png";
+
 const About = () => {
   return (
     <div id="about" className="scroll-page">
@@ -25,8 +28,16 @@ const About = () => {
           knowledge and find innovative solutions.
         </p>
       </div>
-      <div className="about-grid" style={{ marginBottom: "16px" }}>
-        <InfoGrid />
+      <div className="about-grid" style={{ marginBottom: "16px", display: "flex", alignItems: "center" }}>
+        <div style={{ flex: 1, marginRight: "16px", textAlign: "center" }}>
+          <img src={chain} alt="Chain" style={{ maxWidth: "100%", height: "auto" }} />
+        </div>
+        <div style={{ flex: 4 }}>
+          <InfoGrid />
+        </div>
+        <div style={{ flex: 1, marginLeft: "16px", textAlign: "center" }}>
+          <img src={chain} alt="Chain" style={{ maxWidth: "100%", height: "auto", rotate: '180deg' }} />
+        </div>
       </div>
       <div className="current-work">
         <p>Currently working at </p>
