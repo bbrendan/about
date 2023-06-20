@@ -20,11 +20,40 @@ export const PageWrapper = styled.div`
 `;
 
 export const LandingPageWrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 160px;
+
+  .home-content {
+    text-align: left;
+  }
 `;
 
 export const AboutPageWrapper = styled.div`
+  .content-section > p {
+    font-size: 18px;
+  }
+
+  .content-section {
+    width: 72rem;
+  }
+
+  .current-work {
+    align-items: center;
+    padding: 4rem;
+  }
 `;
 
 export const SkillsPageWrapper = styled.div`
+  .content-section {
+    width: 72rem;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 `;

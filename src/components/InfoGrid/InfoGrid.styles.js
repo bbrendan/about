@@ -10,11 +10,15 @@ export const GridWrapper = styled.div`
   .grid-section {
     background-color: #f2f2f2;
     padding: 20px;
+    align-items: center;
   }
 
   .section-title {
+    position: relative;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 10px;
+    gap: 4px;
   }
 
   .section-subtitle {
@@ -25,5 +29,9 @@ export const GridWrapper = styled.div`
 
   .section-content {
     margin-top: 10px;
+  }
+
+  .grid-icon {
+    transform: scale(2);
   }
 `;

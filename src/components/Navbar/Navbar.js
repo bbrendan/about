@@ -3,13 +3,14 @@ import React from "react";
 // styles
 import * as s from "./Navbar.styles";
 
-import HomeIcon from '@mui/icons-material/Home';
+// icons
+import OtherHousesRoundedIcon from '@mui/icons-material/OtherHousesRounded';
 
 const Navbar = () => {
   return (
     <s.NavWrapper className="nav-wrapper">
-      <s.NavLink spy={true} smooth={true} offset={-120} duration={600} to="home">
-        <HomeIcon />
+      <s.NavLink spy={true} smooth={true} offset={-160} duration={600} to="home">
+        <OtherHousesRoundedIcon style={{ transform: 'scale(1.5)' }} />
       </s.NavLink>
       <s.NavMenu>
         <s.NavLink

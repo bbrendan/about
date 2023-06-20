@@ -4,69 +4,44 @@ import React from "react";
 import Card from "../components/Card/Card";
 
 // icons
-import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
-import TerminalIcon from "@mui/icons-material/Terminal";
-import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import { FaJira, FaAws, FaAngular } from 'react-icons/fa';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import NETIcon from '../icons/NETIcon';
+import RabbitMQIcon from '../icons/RabbitMQIcon';
+import MongoIcon from '../icons/MongoIcon';
+import SQLIcon from '../icons/SQLIcon';
+import ReactIcon from '../icons/ReactIcon';
+import FigmaIcon from '../icons/FigmaIcon';
+
+const skillsData = [
+  { title: "React", logo: <ReactIcon /> },
+  { title: ".NET", logo: <NETIcon /> },
+  { title: "Figma", logo: <FigmaIcon /> },
+  { title: "JavaScript", logo: <JavascriptIcon /> },
+  { title: "SQL", logo: <SQLIcon /> },
+  { title: "JIRA", logo: <FaJira /> },
+  { title: "Mongo", logo: <MongoIcon /> },
+  { title: "RabbitMQ", logo: <RabbitMQIcon /> },
+  { title: "Angular", logo: <FaAngular /> },
+  { title: "AWS", logo: <FaAws /> },
+];
 
 const Skills = () => {
   return (
     <div id="skills" className="scroll-page">
       <div className="content-section">
         <h1 style={{ fontSize: "60px" }}>Skills and Experience</h1>
-        <p style={{ fontSize: "16px" }}>
-          Began my developer journey as a full stack developer over 3 years ago.
-          I'm naturally curious and perpetually working on improving my skillset
-          one design / project problem at a time. Experienced in developing both
-          the front and back end of web applications.
-        </p>
         <p>
-          Vist my <a href="https://www.linkedin.com/brendanfarrell">linkedin</a>{" "}
-          for more information or to contact me!
+          Constantly driven by a desire to learn, I'm always on the lookout for
+          new technologies and techniques to enhance my skillset. Each design or
+          project problem I encounter becomes an opportunity for me to expand my
+          knowledge and find innovative solutions.
         </p>
       </div>
-      <div className="card-section" style={{ display: "inline-flex" }}>
-        <Card
-          title="Frontend"
-          icon={
-            <SpaceDashboardIcon
-              style={{
-                transform: "scale(2)",
-                display: "block",
-                margin: "auto",
-              }}
-            />
-          }
-          subtitle="Languages / Frameworks"
-          subtext="HTML, CSS, JS, Angular, Bootstrap, React, Figma, etc."
-        />
-        <Card
-          title="Backend"
-          icon={
-            <TerminalIcon
-              style={{
-                transform: "scale(2)",
-                display: "block",
-                margin: "auto",
-              }}
-            />
-          }
-          subtitle="Languages / Tools"
-          subtext="C#, Python, SQL, MongoDB, RabbitMQ, Redis, Git, etc."
-        />
-        <Card
-          title="Design"
-          icon={
-            <DesignServicesIcon
-              style={{
-                transform: "scale(2)",
-                display: "block",
-                margin: "auto",
-              }}
-            />
-          }
-          subtitle="Things / Software"
-          subtext="UI, Logos, Digital Art, Photoshop, Illustrator, etc."
-        />
+      <div className="card-section">
+        {skillsData.map((skill, index) => (
+          <Card key={index} title={skill.title} logo={skill.logo} />
+        ))}
       </div>
     </div>
   );

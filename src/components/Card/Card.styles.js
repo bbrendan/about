@@ -1,22 +1,37 @@
 import styled from 'styled-components';
   
 export const CardWrapper = styled.div`
-    width: 30vh;
-    border: 1px solid lightgrey;
-    background: #f7f7f7;
-    border-radius: 10px;
-    margin: 8px;
-    padding: 8px 24px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    .card-title {
-        font-size: 32px;
-    }
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+`;
 
-    .card-subtitle {
-        font-size: 16px;
-    }
+export const CardTitle = styled.h2`
+  font-size: 24px;
+  margin-bottom: 10px;
 
-    .card-subtext {
-        font-size: 14px;
-    }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const CardLogo = styled.div`
+  width: 80px;
+  margin: 1rem 0px;
+  transform: scale(2);
+
+  @media (max-width: 768px) {
+    width: 64px;
+    margin: 0.5rem 0px;
+    transform: scale(2);
+  }
 `;

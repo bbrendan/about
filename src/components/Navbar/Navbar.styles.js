@@ -30,9 +30,10 @@ export const NavMenu = styled.ul`
 
 export const NavLink = styled(Link)`
   color: #000000;
+  font-weight: 600;
 
   cursor: pointer;
   &:hover {
-    color: #ff0000;
+    color: #de9556;
   }
 `;
