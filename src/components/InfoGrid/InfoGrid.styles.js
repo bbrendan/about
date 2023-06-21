@@ -10,7 +10,7 @@ export const GridWrapper = styled.div`
   .grid-section {
     background-color: #f2f2f2;
     padding: 20px;
-    align-items: center;
+    width: 24rem;
   }
 
   .section-title {

@@ -13,12 +13,12 @@ const PageContent = () => {
         <s.LandingPageWrapper>
           <Landing />
         </s.LandingPageWrapper>
-        <s.AboutPageWrapper>
-          <About />
-        </s.AboutPageWrapper>
         <s.SkillsPageWrapper>
           <Skills />
         </s.SkillsPageWrapper>
+        <s.AboutPageWrapper>
+          <About />
+        </s.AboutPageWrapper>
       </div>
     </s.PageWrapper>
   );

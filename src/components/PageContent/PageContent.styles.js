@@ -45,12 +45,13 @@ export const AboutPageWrapper = styled.div`
 export const SkillsPageWrapper = styled.div`
   .content-section {
     width: 72rem;
+    margin-bottom: 2rem;
   }
 
   .card-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 16px;
+    grid-gap: 2rem;
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);

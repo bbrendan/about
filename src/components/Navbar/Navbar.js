@@ -19,9 +19,9 @@ const Navbar = () => {
           smooth={true}
           offset={-80}
           duration={600}
-          to="about"
+          to="skills"
         >
-          ABOUT
+          SKILLS
         </s.NavLink>
         <s.NavLink
           className="navlink"
@@ -29,9 +29,9 @@ const Navbar = () => {
           smooth={true}
           offset={-80}
           duration={600}
-          to="skills"
+          to="about"
         >
-          SKILLS
+          ABOUT
         </s.NavLink>
       </s.NavMenu>
     </s.NavWrapper>

@@ -4,8 +4,10 @@ import React from "react";
 import Card from "../components/Card/Card";
 
 // icons
-import { FaJira, FaAws, FaAngular } from 'react-icons/fa';
-import JavascriptIcon from '@mui/icons-material/Javascript';
+import AWSIcon from '../icons/AWSIcon';
+import AngularIcon from '../icons/AngularIcon';
+import JiraIcon from '../icons/JiraIcon';
+import JavaScriptIcon from '../icons/JavaScriptIcon';
 import NETIcon from '../icons/NETIcon';
 import RabbitMQIcon from '../icons/RabbitMQIcon';
 import MongoIcon from '../icons/MongoIcon';
@@ -17,13 +19,13 @@ const skillsData = [
   { title: "React", logo: <ReactIcon /> },
   { title: ".NET", logo: <NETIcon /> },
   { title: "Figma", logo: <FigmaIcon /> },
-  { title: "JavaScript", logo: <JavascriptIcon /> },
+  { title: "JavaScript", logo: <JavaScriptIcon /> },
   { title: "SQL", logo: <SQLIcon /> },
-  { title: "JIRA", logo: <FaJira /> },
-  { title: "Mongo", logo: <MongoIcon /> },
+  { title: "JIRA", logo: <JiraIcon /> },
+  { title: "MongoDB", logo: <MongoIcon /> },
   { title: "RabbitMQ", logo: <RabbitMQIcon /> },
-  { title: "Angular", logo: <FaAngular /> },
-  { title: "AWS", logo: <FaAws /> },
+  { title: "Angular", logo: <AngularIcon /> },
+  { title: "AWS", logo: <AWSIcon /> },
 ];
 
 const Skills = () => {

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
   
 export const CardWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
   background-color: #f2f2f2;
   border-radius: 10px;
   padding: 20px;
@@ -12,6 +15,13 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 768px) {
     padding: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    fill: #de9556;
+    color: #de9556;
   }
 `;
 
