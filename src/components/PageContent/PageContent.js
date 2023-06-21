@@ -9,7 +9,7 @@ import Skills from "../../pages/Skills";
 const PageContent = () => {
   return (
     <s.PageWrapper>
-      <div className="page-content">
+      <div className="page-content" style={{ backgroundColor: '#FCFCFC' }}>
         <s.LandingPageWrapper>
           <Landing />
         </s.LandingPageWrapper>

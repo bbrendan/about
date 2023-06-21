@@ -14,13 +14,13 @@ export const PageWrapper = styled.div`
     align-items: center;
     height: 100vh;
     padding: 50px;
-    border-radius: 20px;
     text-align: center;
+    background: #FCFCFC;
   }
 `;
 
 export const LandingPageWrapper = styled.div`
-  margin-top: 160px;
+  padding-top: 128px;
 
   .home-content {
     text-align: left;
