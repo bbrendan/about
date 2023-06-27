@@ -1,5 +1,12 @@
 import styled from "styled-components";
+
+// icons
 import WysiwygOutlined from "@mui/icons-material/WysiwygOutlined";
+
+// images
+import background from '../../images/bg.jpg';
+import background2 from '../../images/bg2.jpg';
+import background3 from '../../images/bg3.jpg';
 
 export const Logo = styled(WysiwygOutlined)`
   color: #de9556;
@@ -12,37 +19,26 @@ export const PageWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    padding: 50px;
+    min-height: 100vh;
     text-align: center;
-    background: #FCFCFC;
+  }
+
+  .home-page {
+    justify-content: space-evenly;
   }
 `;
 
 export const LandingPageWrapper = styled.div`
-  padding-top: 128px;
+  background-image: url(${background3});
 
   .home-content {
     text-align: left;
   }
 `;
 
-export const AboutPageWrapper = styled.div`
-  .content-section > p {
-    font-size: 18px;
-  }
-
-  .content-section {
-    width: 72rem;
-  }
-
-  .current-work {
-    align-items: center;
-    padding: 4rem;
-  }
-`;
-
 export const SkillsPageWrapper = styled.div`
+  background-image: url(${background});
+
   .content-section {
     width: 72rem;
     margin-bottom: 2rem;
@@ -56,5 +52,22 @@ export const SkillsPageWrapper = styled.div`
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+`;
+
+export const AboutPageWrapper = styled.div`
+  background-image: url(${background2});
+
+  .content-section > p {
+    font-size: 18px;
+  }
+
+  .content-section {
+    width: 72rem;
+  }
+
+  .current-work {
+    align-items: center;
+    padding: 4rem;
   }
 `;

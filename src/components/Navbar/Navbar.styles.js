@@ -12,7 +12,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #F58A07;
+  background: #000;
   padding: 16px 15%;
   z-index: 12;
 `;
@@ -35,6 +35,6 @@ export const NavLink = styled(Link)`
 
   cursor: pointer;
   &:hover {
-    color: #000;
+    color: #ddd;
   }
 `;
