@@ -8,10 +8,10 @@ const Landing = () => {
     <div id="home" className="scroll-page home-page">
       <div className="home-content">
         <div style={{ display: 'flex' }}>
-          <h1 style={{ fontSize: "120px" }}>Hi, I'm Brendan</h1>
+          <h1 style={{ fontSize: "7rem", fontFamily: "Roboto Mono", margin: '1rem' }}>Hi, I'm Brendan</h1>
         </div>
-        <h3 style={{ fontSize: "60px" }}>Full-Stack Developer</h3>
-        <p style={{ fontSize: "18px" }}>
+        <h3 style={{ fontSize: "3rem", fontFamily: "Space Grotesk" }}>Full-Stack Developer</h3>
+        <p style={{ fontSize: "1rem", fontFamily: "Space Grotesk" }}>
           Currently based in Toronto, Ontario - two years of experience building
           applications with a passion for creation and design.
         </p>

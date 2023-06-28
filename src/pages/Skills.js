@@ -30,10 +30,10 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div id="skills" className="scroll-page">
+    <div id="skills" className="scroll-page skills-page">
       <div className="content-section">
-        <h1 style={{ fontSize: "60px" }}>Skills and Experience</h1>
-        <p>
+        <h1 style={{ fontSize: "4rem", margin: '1rem', fontFamily: "Roboto Mono" }}>Skills and Experience</h1>
+        <p style={{ fontFamily: "Space Grotesk" }}>
           Constantly driven by a desire to learn, I'm always on the lookout for
           new technologies and techniques to enhance my skillset. Each design or
           project problem I encounter becomes an opportunity for me to expand my

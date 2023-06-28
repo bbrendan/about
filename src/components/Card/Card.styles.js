@@ -28,6 +28,7 @@ export const CardWrapper = styled.div`
 export const CardTitle = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: "Space Grotesk";
 
   @media (max-width: 768px) {
     font-size: 20px;

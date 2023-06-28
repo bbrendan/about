@@ -24,7 +24,7 @@ export const PageWrapper = styled.div`
   }
 
   .home-page {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `;
 
@@ -59,15 +59,15 @@ export const AboutPageWrapper = styled.div`
   background-image: url(${background2});
 
   .content-section > p {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .content-section {
-    width: 72rem;
+    width: 60rem;
   }
 
   .current-work {
     align-items: center;
-    padding: 4rem;
+    padding: 1rem;
   }
 `;
