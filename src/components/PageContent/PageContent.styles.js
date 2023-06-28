@@ -9,7 +9,7 @@ import background2 from '../../images/bg2.jpg';
 import background3 from '../../images/bg3.jpg';
 
 export const Logo = styled(WysiwygOutlined)`
-  color: #de9556;
+  color: #880D1E;
   margin: 0px 32px 0px 4px;
   transform: scale(4);
 `;
@@ -25,6 +25,15 @@ export const PageWrapper = styled.div`
 
   .home-page {
     justify-content: center;
+  }
+
+  .highlighted {
+    background: #000;
+    color: white;
+    &:hover {
+      background: white;
+      color: #000;
+    }
   }
 `;
 

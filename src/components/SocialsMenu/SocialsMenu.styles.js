@@ -17,6 +17,6 @@ export const SocialsLink = styled.a`
   }
 
   &:hover {
-    color: #de9556;
+    color: #880D1E;
   }
 `;

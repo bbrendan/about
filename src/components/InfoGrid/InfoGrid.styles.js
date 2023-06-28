@@ -8,7 +8,8 @@ export const GridWrapper = styled.div`
   }
 
   .grid-section {
-    background-color: #f2f2f2;
+    background-color: #DADADA;
+    border-radius: 10px;
     padding: 20px;
     width: 32rem;
   }

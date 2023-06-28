@@ -11,7 +11,7 @@ const About = () => {
       </h2>
       <div className="content-section" style={{ fontFamily: "Roboto Mono" }}>
         <p>
-          With a natural curiosity and a passion for continuous growth, I thrive
+          <span className="highlighted">With a natural curiosity</span> and a passion for continuous growth, I thrive
           on tackling design and project challenges head-on.
         </p>
         <p>

@@ -37,7 +37,7 @@ const Skills = () => {
           Constantly driven by a desire to learn, I'm always on the lookout for
           new technologies and techniques to enhance my skillset. Each design or
           project problem I encounter becomes an opportunity for me to expand my
-          knowledge and find innovative solutions.
+          knowledge and <span className="highlighted">find innovative solutions.</span>
         </p>
       </div>
       <div className="card-section">
