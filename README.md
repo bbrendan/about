@@ -13,3 +13,9 @@ or
 ```bash
 npm i
 ```
+
+## Usage
+
+```bash
+npm run start
+```
