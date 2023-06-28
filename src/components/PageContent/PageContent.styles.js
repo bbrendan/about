@@ -40,7 +40,6 @@ export const PageWrapper = styled.div`
 export const LandingPageWrapper = styled.div`
   background-image: url(${background3});
   background-repeat: no-repeat;
-  background-size: contain;
 
   .home-content {
     text-align: left;
@@ -50,7 +49,6 @@ export const LandingPageWrapper = styled.div`
 export const SkillsPageWrapper = styled.div`
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-size: contain;
 
   .content-section {
     width: 72rem;
@@ -71,7 +69,6 @@ export const SkillsPageWrapper = styled.div`
 export const AboutPageWrapper = styled.div`
   background-image: url(${background2});
   background-repeat: no-repeat;
-  background-size: contain;
 
   .content-section > p {
     font-size: 1rem;
